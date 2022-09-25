@@ -116,7 +116,7 @@ body {
     display: block;
     transition: none;
     margin-top: -8px;
-    text-align: center;
+    text-align: left;
     width: 3%;
 }
 
@@ -134,10 +134,153 @@ body {
 
 /* Slider */
 
-.swiper {
+/* .swiper {
     height: 850px;
+} */
+
+/* BODY */
+
+/* hEADING */
+
+.viewporthead{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+    margin-bottom: 70px;
+    background-color: hsl(331, 83%, 73%);
+    padding: 15px 0;
 }
 
+.viewporthead h2{
+    font-weight: 900;
+    font-size: 30px;
+    
+    color: hsl(225, 153%, 65%);
+    letter-spacing: 1px;
+}
+
+/* CARD */
+
+.cardsec{
+    height: 100vh;
+    left: 0;
+}
+
+.cards{
+    position: absolute;
+    top: 5%;
+    height: 500px;
+}
+
+.card-box{
+    height: auto;
+    min-height: 400px;
+    width: auto;
+    max-width: 330px;
+    background: hsl(331, 83%, 85%);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 12%;
+    transition: 0.5s ease;
+    border-radius: 40px;
+    margin-top: 15%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-box:hover{
+    transform: scale(1.2);
+    border-radius: 40;
+    z-index: 10;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.card-box .imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: snow;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+
+.imgs{
+    position: relative;
+    padding: 5%;
+}
+
+.imgs img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.changeimg{
+    height: 200px;
+}
+
+.card-content{
+    margin-top: 15px;
+}
+
+.card-content h2{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-transform:uppercase;
+    color: hsl(225, 53%, 60%);
+    transition: .6s ease;
+}
+
+.card-content h2:hover{
+    text-decoration: underline;
+}
+
+.card-content p{
+    margin-top: -10px;
+    padding: 10px 25px;
+    text-align: justify;
+    line-height: 27px;
+}
+
+/* List Users Page */
+
+#perso{
+    /* display: flex; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#perso tbody tr td {
+    padding: 15px 25px;
+    /* padding-left: 85px;
+    padding-right: 85px; */
+    text-align: left;
+    font-size: 20px;
+}
+
+#perso thead tr th{
+    background: hsl(331, 83%, 59%);
+    padding: 25px;
+    text-align: left;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#perso tbody tr:nth-child(even) {
+    background-color: hsl(331, 83%, 77%);
+}
+
+#perso tbody tr:nth-child(odd) {
+    background-color: hsl(331, 83%, 85%);
+}
+
+.body{
+    padding: 0;
+}
 
 /* Footer */
 
@@ -360,9 +503,10 @@ body {
         align-items: center;
     }
     .logo {
-        height: 75px;
+        height: 65px;
         width: 95px;
-        margin-left: 20px;
+        /* margin-top: 85px; */
+        margin-left: -30px;
     }
     .logotext {
         align-items: center;
@@ -377,6 +521,27 @@ body {
     }
     #mySidenav {
         display: block;
+    }
+    .swiper{
+        height: auto;
+        max-height: 900px;
+        overflow: hidden;
+    }
+    .viewporthead{
+        margin-bottom: 0;
+    }
+    .cardsec{
+        height: 3900px;
+    }
+    
+    .cards{
+        top: 0;
+        height: 500px;
+        position: relative;
+        left: 1%;
+    }
+    .card-box{
+        left: 3%;
     }
 }
 
@@ -402,15 +567,17 @@ body {
     }
     #mySidenav {
         display: block;
-    }
+     }
+
 }
-
-
-/* @media (max-width: 280px) {} */
 
 @media (min-width: 1024px) {
     .logocontai {
-        margin-left: -50px;
+        margin-left: -200px;
+    }
+    .top{
+        margin-top: 25px;
+        margin-right: -15px !important;
     }
     .sideNavBtn {
         display: block;
@@ -424,9 +591,27 @@ body {
     .top h6 {
         margin-top: 15px;
     }
+    .swiper{
+        min-height: 600px !important;
+        overflow: hidden;
+    }
+    .cardsec{
+        min-height: 1300px;
+        height: auto;
+    }
+    .swiper{
+        min-height: 850px !important;
+        overflow: hidden;
+    }
+
 }
 
 @media (min-width: 1920px) {
+    .swiper{
+        min-height: 950px !important;
+        height: 1050px !important;
+        overflow: hidden;
+    }
     .sideNavBtn {
         display: none;
     }
@@ -435,6 +620,55 @@ body {
     }
     .header {
         display: block;
+    }
+    .card-box{
+        margin-right: -115px;
+    }
+    .cardsec{
+        left: 0;
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 768px) { 
+    .logocontai{
+        position: relative;
+        left: 20%;
+    }
+    .logocontai .logo{
+        margin-top: 30px;
+        /* position: relative;
+        left: 50%; */
+    }
+    .top{
+        position: relative;
+        margin-right: 90px;
+    }
+    .swiper{
+        height: 400px !important;
+        max-height: auto;
+        overflow: hidden;
+    }
+    .viewporthead{
+        /* margin-top: -190px; */
+        margin-bottom: 60px;
+    }
+    .cardsec{
+        height: 180vh !important;
+    }
+ }
+
+ @media (min-width: 576px) {
+
+.viewporthead{
+    margin-bottom: 0;
+}
+
+}
+
+@media(min-width:280px){
+    .cardsec{
+        height: 4600px;
     }
 }
 
@@ -445,4 +679,4 @@ body {
 
 @media (min-width: 992px) { ... }
 
-@media (min-width: 1200px) { ... }*/
+@media (min-width: 1200px) { ... } */
