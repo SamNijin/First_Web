@@ -3,7 +3,6 @@ body {
     justify-content: center;
 }
 
-
 /* Header */
 
 .logocontai {
@@ -46,7 +45,7 @@ body {
     text-decoration: none;
     font-family: Arial;
     color: white;
-    transition: .6s ease-in-out;
+    transition: 0.6s ease-in-out;
 }
 
 .header .headlink .headlinktext:hover {
@@ -131,7 +130,6 @@ body {
     background-color: salmon;
 }
 
-
 /* Slider */
 
 /* .swiper {
@@ -142,7 +140,7 @@ body {
 
 /* hEADING */
 
-.viewporthead{
+.viewporthead {
     display: flex;
     justify-content: center;
     position: relative;
@@ -152,28 +150,28 @@ body {
     padding: 15px 0;
 }
 
-.viewporthead h2{
+.viewporthead h2 {
     font-weight: 900;
     font-size: 30px;
-    
+
     color: hsl(225, 153%, 65%);
     letter-spacing: 1px;
 }
 
 /* CARD */
 
-.cardsec{
+.cardsec {
     height: 100vh;
     left: 0;
 }
 
-.cards{
+.cards {
     position: absolute;
     top: 5%;
     height: 500px;
 }
 
-.card-box{
+.card-box {
     height: auto;
     min-height: 400px;
     width: auto;
@@ -190,14 +188,16 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card-box:hover{
+.card-box:hover {
     transform: scale(1.2);
     border-radius: 40;
     z-index: 10;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.card-box .imgs{
+.card-box .imgs {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -206,40 +206,41 @@ body {
     border-top-left-radius: 40px;
 }
 
-.imgs{
+.imgs {
     position: relative;
     padding: 5%;
 }
 
-.imgs img{
+.imgs img {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 150px;
 }
-.changeimg{
+
+.changeimg {
     height: 200px;
 }
 
-.card-content{
+.card-content {
     margin-top: 15px;
 }
 
-.card-content h2{
+.card-content h2 {
     font-size: 25px;
     display: flex;
     justify-content: center;
     font-weight: 700;
-    text-transform:uppercase;
+    text-transform: uppercase;
     color: hsl(225, 53%, 60%);
-    transition: .6s ease;
+    transition: 0.6s ease;
 }
 
-.card-content h2:hover{
+.card-content h2:hover {
     text-decoration: underline;
 }
 
-.card-content p{
+.card-content p {
     margin-top: -10px;
     padding: 10px 25px;
     text-align: justify;
@@ -248,37 +249,58 @@ body {
 
 /* List Users Page */
 
-#perso{
+#perso {
     /* display: flex; */
     width: 100%;
     border-collapse: collapse;
 }
 
 #perso tbody tr td {
-    padding: 15px 25px;
-    /* padding-left: 85px;
-    padding-right: 85px; */
+    padding: 15px 55px;
     text-align: left;
     font-size: 20px;
+    width: 100px;
 }
 
-#perso thead tr th{
-    background: hsl(331, 83%, 59%);
-    padding: 25px;
+#perso thead tr th {
+    background: hsl(210, 100%, 50%);
+    padding: 25px 55px;
     text-align: left;
     font-weight: 900;
     font-size: 20px;
 }
 
 #perso tbody tr:nth-child(even) {
-    background-color: hsl(331, 83%, 77%);
+    background-color: hsl(210, 100%, 60%);
 }
 
 #perso tbody tr:nth-child(odd) {
-    background-color: hsl(331, 83%, 85%);
+    background-color: hsl(210, 100%, 70%);
 }
 
-.body{
+#perso tbody tr th.icon {
+    text-align: left;
+    padding: 0;
+    width: 10px;
+}
+
+#perso tbody tr td.icon {
+    padding: 15px 55px;
+    text-align: left;
+    font-size: 20px;
+    width: 100px;
+}
+
+#perso tbody tr td.icon a {
+    text-decoration: none;
+    color: black;
+}
+
+#perso tbody tr td.icon span {
+    cursor: pointer;
+}
+
+.body {
     padding: 0;
 }
 
@@ -315,7 +337,7 @@ body {
     opacity: 0.8;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-dark .item:not(.social) {
         text-align: center;
         padding-bottom: 20px;
@@ -326,7 +348,7 @@ body {
     margin-bottom: 36px;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
     .footer-dark .item.text {
         margin-bottom: 0;
     }
@@ -341,7 +363,7 @@ body {
     text-align: center;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .footer-dark .item.social {
         text-align: center;
         margin-top: 20px;
@@ -374,9 +396,7 @@ body {
     margin-bottom: 0;
 }
 
-
 /* scroll bar */
-
 
 /* width */
 
@@ -385,32 +405,28 @@ body {
     cursor: pointer;
 }
 
-
 /* Track */
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px hsl(331, 83%, 59%);
     /* border-radius: 10px; */
     /* cursor: default; */
 }
 
-
 /* Handle */
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: hsl(331, 83%, 73%);
     /* border-radius: 10px; */
     /* cursor: default; */
 }
 
-
 /* Handle on hover */
 
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: hsl(331, 83%, 80%);
     /* cursor: default; */
 }
-
 
 /* Side NavBAr Phone */
 
@@ -495,52 +511,60 @@ body {
     background-color: salmon;
 }
 
-
 /* Media Query */
 
 @media (min-width: 360px) {
     .logocontai {
         align-items: center;
     }
+
     .logo {
         height: 65px;
         width: 95px;
         /* margin-top: 85px; */
         margin-left: -30px;
     }
+
     .logotext {
         align-items: center;
         margin-left: 48px;
         font-weight: 100;
     }
+
     .top {
         margin-top: 0;
     }
+
     .header {
         display: none;
     }
+
     #mySidenav {
         display: block;
     }
-    .swiper{
+
+    .swiper {
         height: auto;
         max-height: 900px;
         overflow: hidden;
     }
-    .viewporthead{
+
+    .viewporthead {
         margin-bottom: 0;
     }
-    .cardsec{
+
+    .cardsec {
         height: 3900px;
     }
-    
-    .cards{
+
+    .cards {
         top: 0;
         height: 500px;
         position: relative;
         left: 1%;
     }
-    .card-box{
+
+    .card-box {
         left: 3%;
     }
 }
@@ -549,129 +573,147 @@ body {
     .logocontai {
         align-items: center;
     }
+
     .logo {
         height: 75px;
         width: 95px;
         margin-left: -10px;
     }
+
     .logotext {
         align-items: center;
         margin-left: 78px;
         font-weight: 100;
     }
+
     .top {
         margin-top: 0;
     }
+
     .header {
         display: none;
     }
+
     #mySidenav {
         display: block;
-     }
-
+    }
 }
 
 @media (min-width: 1024px) {
     .logocontai {
         margin-left: -200px;
     }
-    .top{
+
+    .top {
         margin-top: 25px;
         margin-right: -15px !important;
     }
+
     .sideNavBtn {
         display: block;
     }
+
     .mobnav {
         display: none;
     }
+
     .header {
         display: block;
     }
+
     .top h6 {
         margin-top: 15px;
     }
-    .swiper{
+
+    .swiper {
         min-height: 600px !important;
         overflow: hidden;
     }
-    .cardsec{
+
+    .cardsec {
         min-height: 1300px;
         height: auto;
     }
-    .swiper{
+
+    .swiper {
         min-height: 850px !important;
         overflow: hidden;
     }
-
 }
 
 @media (min-width: 1920px) {
-    .swiper{
+    .swiper {
         min-height: 950px !important;
         height: 1050px !important;
         overflow: hidden;
     }
+
     .sideNavBtn {
         display: none;
     }
+
     .mobnav {
         display: none;
     }
+
     .header {
         display: block;
     }
-    .card-box{
+
+    .card-box {
         margin-right: -115px;
     }
-    .cardsec{
+
+    .cardsec {
         left: 0;
         height: 100vh !important;
     }
 }
 
-@media (min-width: 768px) { 
-    .logocontai{
+@media (min-width: 768px) {
+    .logocontai {
         position: relative;
         left: 20%;
     }
-    .logocontai .logo{
+
+    .logocontai .logo {
         margin-top: 30px;
         /* position: relative;
         left: 50%; */
     }
-    .top{
+
+    .top {
         position: relative;
         margin-right: 90px;
     }
-    .swiper{
+
+    .swiper {
         height: 400px !important;
         max-height: auto;
         overflow: hidden;
     }
-    .viewporthead{
+
+    .viewporthead {
         /* margin-top: -190px; */
         margin-bottom: 60px;
     }
-    .cardsec{
+
+    .cardsec {
         height: 180vh !important;
     }
- }
-
- @media (min-width: 576px) {
-
-.viewporthead{
-    margin-bottom: 0;
 }
 
+@media (min-width: 576px) {
+    .viewporthead {
+        margin-bottom: 0;
+    }
 }
 
-@media(min-width:280px){
-    .cardsec{
+@media (min-width: 280px) {
+    .cardsec {
         height: 4600px;
     }
 }
-
 
 /* @media (min-width: 576px) { ... }
 

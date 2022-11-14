@@ -107,7 +107,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item-mob" href="../../../../sam/Form/index.php">
+                                        <a class="dropdown-item-mob" href="application/views/form.php">
                                             REGISTER
                                         </a>
                                     </li>
@@ -175,7 +175,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="../../../../sam/Form/index.php">
+                                    <a class="dropdown-item" href="application/views/form.php">
                                         REGISTER
                                     </a>
                                 </li>

@@ -8,6 +8,7 @@
     <title>List Users</title>
     <link rel="stylesheet" href="../views/css/cse.css">
     <link rel="stylesheet" href="../views/css/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
         function loginValidate()
         {
             include '../settings/config.php';
-            $query = "SELECT * FROM `student_registration` ORDER BY DATE DESC";
+            $query = "SELECT * FROM `student_registration` WHERE isDeleted=1 ORDER BY DATE DESC";
             $query_run = $conn->query($query);
 
             if ($query_run) {
@@ -44,6 +45,12 @@
                     <th>
                         Phone Number
                     </th>
+                    <th class="icon">
+                        Edit
+                    </th>
+                    <th class="icon">
+                        Delete
+                    </th>
                 </tr>
             </thead>
             <tbody> 
@@ -53,7 +60,7 @@
                
                 <tr>
                     <td>
-                        ' . $row->sno . '
+                        ' . $row->rno . '
                     </td>
                     <td>
                         ' . $row->name . '
@@ -67,6 +74,20 @@
                     <td>
                         ' . $row->phone . '
                     </td>
+
+                    <td class="icon">
+                    <a href="updateuser.php">
+                    <span>
+                    <i class="ri-pencil-line" id="' . $row->rno . '"></i>  
+                    </span>
+                    </a>
+                    </td>
+                    <td class="icon">
+                    <span>
+                    <i class="ri-delete-bin-line"></i>
+                    </span>
+                    </td>
+                    
                 </tr>
                
             

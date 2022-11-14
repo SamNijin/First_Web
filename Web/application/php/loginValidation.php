@@ -3,9 +3,6 @@
 // loginValidate();
 
 if (isset($_REQUEST['login'])) {
-
-
-
     loginValidate();
 }
 
